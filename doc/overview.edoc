@@ -29,6 +29,9 @@
 @title pair
 
 @doc
+
+[![Pair Programming](http://github.com/andrzejsliwa/pair/blob/master/priv/pair_programming.jpg)]
+
 **pair** is a simple git helper for pair programming
 
 [![Build Status](https://secure.travis-ci.org/andrzejsliwa/pair.png?branch=master)](http://travis-ci.org/andrzejsliwa/pair)
