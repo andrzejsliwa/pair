@@ -76,15 +76,15 @@ config() ->
 create_template(ConfigPath) ->
     ConfigTemplate =
     "%% define your identity...
-     {my_name,  \"Andrzej Sliwa\"}.
-     {my_email, \"andrzej.sliwa@i-tool.eu\"}.
+{my_name,  \"Andrzej Sliwa\"}.
+{my_email, \"andrzej.sliwa@i-tool.eu\"}.
 
-     %% define your pairs...
-     {\"an-ar\",  [{left, my_name}, {right, \"Artur Kowalski\"},
-                {email, \"andrzej+artur@mydomain.com\"}]}.
+%% define your pairs...
+{\"an-ar\",  [{left, my_name}, {right, \"Artur Kowalski\"},
+              {email, \"andrzej+artur@mydomain.com\"}]}.
 
-     {\"an-jan\", [{left, my_email}, {right, \"Jan Kowalski\"},
-                {email, \"andrzej+jan@mydomain.com\"}]}.",
+{\"an-jan\", [{left, my_email}, {right, \"Jan Kowalski\"},
+              {email, \"andrzej+jan@mydomain.com\"}]}.",
     file:write_file(ConfigPath, ConfigTemplate),
     io:format("created example pair config: '~s'~n", [ConfigPath]),
     io:format("first update it and run pair again...~n"),
