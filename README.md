@@ -57,11 +57,12 @@ then your .git/config looks like<pre>[user]
 Back to your identity<pre>$ ./pair
 Back to my identity.</pre>
 
-and then your .git/config looks like'''
-[user]
+and then your .git/config looks like<pre>[user]
     name = Andrzej Sliwa
-    email = andrzej.sliwa@i-tool.eu
-<pre>To generate doc, run 'make doc'.
+    email = andrzej.sliwa@i-tool.eu</pre>
+
+To generate doc, run 'make doc'.
+
 ## Contribute
 
 For issues, comments or feedback please [create an
@@ -70,11 +71,8 @@ issue](http://github.com/andrzejsliwa/rebar_proper_plugin/issues).
 ### Notes for developers
 
 If you want to contribute patches or improve the doc, you will need to
-build hackney using the `rebar.dev.config'  file. It can also be built
-using the **Makefile**:
-
-```
-$ make dev       ; # compile & get deps
+build hackney using the `rebar.dev.config`  file. It can also be built
+using the **Makefile**:<pre>$ make dev       ; # compile & get deps
 $ make dev_clean ; # clean all files</pre>
 
 

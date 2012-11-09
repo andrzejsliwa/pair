@@ -110,11 +110,11 @@ Back to my identity.
 
 and then your .git/config looks like
 
-'''
+```
 [user]
     name = Andrzej Sliwa
     email = andrzej.sliwa@i-tool.eu
-```
+'''
 
 To generate doc, run 'make doc'.
 
