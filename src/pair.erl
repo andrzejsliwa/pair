@@ -83,7 +83,7 @@ create_template(ConfigPath) ->
 {\"an-ar\",  [{left, my_name}, {right, \"Artur Kowalski\"},
               {email, \"andrzej+artur@mydomain.com\"}]}.
 
-{\"an-jan\", [{left, my_email}, {right, \"Jan Kowalski\"},
+{\"an-jan\", [{left, my_name}, {right, \"Jan Kowalski\"},
               {email, \"andrzej+jan@mydomain.com\"}]}.",
     file:write_file(ConfigPath, ConfigTemplate),
     io:format("created example pair config: '~s'~n", [ConfigPath]),

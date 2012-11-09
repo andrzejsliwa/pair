@@ -44,7 +44,7 @@ Edit config file (~/.pair.config)<pre>%% define your identity...
 {"an-ar",  [{left, my_name}, {right, "Artur Kowalski"},
           {email, "andrzej+artur@mydomain.com"}]}.
 
-{"an-jan", [{left, my_email}, {right, "Jan Kowalski"},
+{"an-jan", [{left, my_name}, {right, "Jan Kowalski"},
           {email, "andrzej+jan@mydomain.com"}]}.</pre>
 
 Change pair<pre>$ ./pair an-ar
