@@ -7,7 +7,7 @@ Copyright (c) 2012 Andrzej Śliwa.
 
 __Version:__ 0.1
 
-[![Pair Programming](http://github.com/andrzejsliwa/pair/blob/master/priv/pair_programming.jpg)]
+[Pair Programming](https://raw.github.com/andrzejsliwa/pair/master/priv/pair_programming.jpg)]
 
 **pair** is a simple git helper for pair programming
 
