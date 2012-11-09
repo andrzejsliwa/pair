@@ -94,6 +94,7 @@ Pairing: Andrzej Sliwa + Artur Kowalski
 '''
 
 then your .git/config looks like
+
 '''
 ...
 [user]
@@ -102,12 +103,14 @@ then your .git/config looks like
 ```
 
 Back to your identity
+
 ```
 $ ./pair
 Back to my identity.
 '''
 
 and then your .git/config looks like
+
 '''
 ...
 [user]
