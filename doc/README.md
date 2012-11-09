@@ -13,15 +13,15 @@ __Version:__ 0.1
 [![Build Status](https://secure.travis-ci.org/andrzejsliwa/pair.png?branch=master)](http://travis-ci.org/andrzejsliwa/pair)
 
 Note: This is a work in progress, see the
-[TODO](http://github.com/andrzejsliwa/rebar_proper_plugin/blob/master/TODO.md) for more
+[TODO](http://github.com/andrzejsliwa/pair/blob/master/TODO.md) for more
 informations on what still need to be done.
 
 ## License
-See [LICENSE](http://github.com/andrzejsliwa/rebar_proper_plugin/blob/master/LICENSE) file for licensing information.
+See [LICENSE](http://github.com/andrzejsliwa/pair/blob/master/LICENSE) file for licensing information.
 
 ## Installation
 
-Download the sources from our [Github repository](http://github.com/andrzejsliwa/rebar_proper_plugin)
+Download the sources from our [Github repository](http://github.com/andrzejsliwa/pair)
 
 Build it<pre>$ cd pair
 $ make</pre>
