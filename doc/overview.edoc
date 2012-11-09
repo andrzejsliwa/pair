@@ -1,0 +1,117 @@
+%%==============================================================================
+%% MIT License
+%%
+%% Copyright (c) 2012 Andrzej Sliwa
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining
+%% a copy of this software and associated documentation files (the
+%% "Software"), to deal in the Software without restriction, including
+%% without limitation the rights to use, copy, modify, merge, publish,
+%% distribute, sublicense, and/or sell copies of the Software, and to
+%% permit persons to whom the Software is furnished to do so, subject to
+%% the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be
+%% included in all copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+%% EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+%% MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+%% NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+%% LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+%% OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+%% WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+%%==============================================================================
+
+
+@copyright 2012 Andrzej Śliwa.
+@version 0.1
+@title pair
+
+@doc
+**pair** is a simple git helper for pair programming
+
+[![Build Status](https://secure.travis-ci.org/andrzejsliwa/pair.png?branch=master)](http://travis-ci.org/andrzejsliwa/pair)
+
+    Note: This is a work in progress, see the
+[TODO](http://github.com/andrzejsliwa/rebar_proper_plugin/blob/master/TODO.md) for more
+informations on what still need to be done.
+
+## License
+See [LICENSE](http://github.com/andrzejsliwa/rebar_proper_plugin/blob/master/LICENSE) file for licensing information.
+
+## Installation
+
+Download the sources from our [Github repository](http://github.com/andrzejsliwa/rebar_proper_plugin)
+
+Build it
+
+```
+$ cd pair
+$ make
+'''
+
+Copy 'pair' to your bin path (ex. /usr/local/bin)
+
+```
+$ cp pair ~/usr/local/bin
+'''
+
+## Basic usage
+
+The basic usage of **pair** is:
+
+Run it first time
+```
+$ pair
+created example pair config: '/Users/andrzejsliwa/.pair.config'
+first update it and run pair again...
+'''
+
+Edit config file (~/.pair.config)
+
+```
+%% define your identity...
+{my_name,  "Andrzej Sliwa"}.
+{my_email, "andrzej.sliwa@i-tool.eu"}.
+
+%% define your pairs...
+{"an-ar",  [{left, my_name}, {right, "Artur Kowalski"},
+          {email, "andrzej+artur@mydomain.com"}]}.
+
+{"an-jan", [{left, my_email}, {right, "Jan Kowalski"},
+          {email, "andrzej+jan@mydomain.com"}]}.
+'''
+
+Change pair
+
+```
+$ ./pair an-ar
+Pairing: Andrzej Sliwa + Artur Kowalski
+'''
+
+Back to your identity
+```
+$ ./pair
+Back to my identity.
+'''
+
+To generate doc, run 'make doc'.
+
+## Contribute
+
+For issues, comments or feedback please [create an
+issue](http://github.com/andrzejsliwa/rebar_proper_plugin/issues).
+
+### Notes for developers
+
+If you want to contribute patches or improve the doc, you will need to
+build hackney using the `rebar.dev.config'  file. It can also be built
+using the **Makefile**:
+
+```
+$ make dev       ; # compile & get deps
+$ make dev_clean ; # clean all files
+'''
+
+@end
