@@ -48,11 +48,22 @@ Edit config file (~/.pair.config)<pre>%% define your identity...
           {email, "andrzej+jan@mydomain.com"}]}.</pre>
 
 Change pair<pre>$ ./pair an-ar
-Pairing: Andrzej Sliwa + Artur Kowalski</pre>Back to your identity
-<pre>$ ./pair
-Back to my identity.</pre>
-
-To generate doc, run 'make doc'.
+Pairing: Andrzej Sliwa + Artur Kowalski</pre>then your .git/config looks like
+'''
+...
+[user]
+	name = Andrzej Sliwa + Artur Kowalski
+	email = andrzej+artur@mydomain.com
+<pre>Back to your identity
+```
+$ ./pair
+Back to my identity.</pre>and then your .git/config looks like
+'''
+...
+[user]
+	name = Andrzej Sliwa
+	email = andrzej.sliwa@i-tool.eu
+<pre>To generate doc, run 'make doc'.
 
 ## Contribute
 
@@ -62,8 +73,11 @@ issue](http://github.com/andrzejsliwa/rebar_proper_plugin/issues).
 ### Notes for developers
 
 If you want to contribute patches or improve the doc, you will need to
-build hackney using the `rebar.dev.config`  file. It can also be built
-using the **Makefile**:<pre>$ make dev       ; # compile & get deps
+build hackney using the `rebar.dev.config'  file. It can also be built
+using the **Makefile**:
+
+```
+$ make dev       ; # compile & get deps
 $ make dev_clean ; # clean all files</pre>
 
 
