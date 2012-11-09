@@ -50,22 +50,17 @@ Edit config file (~/.pair.config)<pre>%% define your identity...
 Change pair<pre>$ ./pair an-ar
 Pairing: Andrzej Sliwa + Artur Kowalski</pre>
 
-then your .git/config looks like'''
-...
-[user]
-	name = Andrzej Sliwa + Artur Kowalski
-	email = andrzej+artur@mydomain.com
-<pre>Back to your identity
+then your .git/config looks like<pre>[user]
+    name = Andrzej Sliwa + Artur Kowalski
+    email = andrzej+artur@mydomain.com</pre>
 
-```
-$ ./pair
+Back to your identity<pre>$ ./pair
 Back to my identity.</pre>
 
 and then your .git/config looks like'''
-...
 [user]
-	name = Andrzej Sliwa
-	email = andrzej.sliwa@i-tool.eu
+    name = Andrzej Sliwa
+    email = andrzej.sliwa@i-tool.eu
 <pre>To generate doc, run 'make doc'.
 ## Contribute
 
