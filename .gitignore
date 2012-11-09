@@ -4,6 +4,9 @@
 # ignore macosx specific meta file
 .DS_Store
 
+# ignore binary
+pair
+
 # ignore rebar specific files and folders
 .eunit
 rel/releases
